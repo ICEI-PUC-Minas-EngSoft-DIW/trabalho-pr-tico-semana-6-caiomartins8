@@ -1,12 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>One Piece Navigator | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pirata+One&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="ocean-bg"></div>
+    <header>
+        <div class="logo-area"><img src="images/logo.png" alt="Logo" class="floating"></div>
+        <div class="search-wrapper">
+            <input type="text" placeholder="Rastrear Akuma no Mi...">
+            <div class="search-glow"></div>
+        </div>
+        <div class="user-profile">
+            <a href="perfil.html" class="avatar-ring">
+                <img src="images/user-solid-full.svg" alt="User">
+            </a>
+        </div>
+    </header>
+
+    <div id="main-wrapper">
+        <nav class="glass-sidebar">
+            <h2 class="menu-title">SISTEMA</h2>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><span>⚓</span> Home</a></li>
+                <li><a href="perfil.html"><span>👤</span> Meu Perfil</a></li>
+                <li><a href="comunidade.html"><span>💬</span> Comunidade</a></li>
+            </ul>
+        </nav>
+
+        <main class="hero-content">
+            <section class="system-widgets">
+                <div class="widget-card">
+                    <span class="widget-label">USUÁRIOS NO MAR</span>
+                    <span class="widget-value">12.450</span>
+                    <div class="widget-trend">+15% hoje</div>
+                </div>
+                <div class="widget-card">
+                    <span class="widget-label">CAPÍTULOS TOTAIS</span>
+                    <span class="widget-value">1.115</span>
+                    <div class="widget-status">Lançamento: Domingo</div>
+                </div>
+                <div class="widget-card">
+                    <span class="widget-label">RECOMPENSA TOTAL</span>
+                    <span class="widget-value">฿ 45.8B</span>
+                    <div class="widget-trend">Acumulado</div>
+                </div>
+            </section>
+
+            <div class="home-layout-grid">
+                <div class="main-column">
+                    <section class="info-grid">
+                        <article class="fancy-card">
+                            <div class="card-inner">
+                                <h3>O Tesouro</h3>
+                                <p>A jornada definitiva. O One Piece é a prova da liberdade absoluta.</p>
+                            </div>
+                        </article>
+                    </section>
+
+                    <div id="onePieceCarousel" class="carousel slide custom-showcase" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/personagens-pixel/luffy-removebg-preview.png" class="d-block mx-auto"
+                                    alt="Luffy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="system-feed">
+                    <h4 class="feed-title">LOG DE ATIVIDADES</h4>
+                    <ul class="feed-list">
+                        <li class="feed-item">
+                            <span class="time">2m atrás</span>
+                            <p><strong>Nami</strong> postou uma nova rota para Skypiea.</p>
+                        </li>
+                        <li class="feed-item">
+                            <span class="time">15m atrás</span>
+                            <p>Recompensa de <strong>Zoro</strong> atualizada pela Marinha!</p>
+                        </li>
+                        <li class="feed-item">
+                            <span class="time">1h atrás</span>
+                            <p>Novo capítulo 1116 disponível para discussão.</p>
+                        </li>
+                    </ul>
+                    <button class="btn-outline-small">Ver Log Completo</button>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <footer class="cyber-footer">
+        <div class="footer-glass">
+            <form class="suggest-box">
+                <h4>Newsletter da Grand Line</h4>
+                <div class="input-row">
+                    <input type="text" placeholder="Codinome">
+                    <input type="text" placeholder="Próxima Ilha">
+                </div>
+                <button type="submit" class="btn-pirate">DAR AS VELAS</button>
+            </form>
+            <div class="social-links">
+                <p>&copy; 2026 One Piece Navigator.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
